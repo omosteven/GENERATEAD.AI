@@ -1,0 +1,55 @@
+@import "../_variables";
+
+.switch-button__off {
+  background-color: $white-color !important;
+  border: 1px solid $primary-color;
+  transition: 0.5s;
+}
+
+.switch-button {
+  position: relative;
+  border-radius: 30px;
+  width: 80px;
+  height: 36px;
+  background-color: $primary-color;
+  cursor: pointer;
+
+  .text {
+    color: $white-color;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+    color: $white-color;
+    font-size: 14px;
+  }
+
+  .text.off {
+    right: 13px;
+    left: unset;
+    color: $primary-muted-color;
+    transition: 0.5s;
+  }
+
+  .circle {
+    position: absolute;
+    height: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $white-color;
+    transition: 0.5s;
+  }
+  .circle.right {
+    background-color: $white-muted-color;
+    transition: 0.5s;
+  }
+
+  .circle.left {
+    right: 3px;
+    left: unset;
+  }
+}

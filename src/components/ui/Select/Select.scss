@@ -1,0 +1,45 @@
+@import "../_variables";
+
+.custom-select {
+  .label {
+    color: $black-color;
+    display: block;
+  }
+
+  select {
+    outline: none;
+    height: $input-height;
+    margin-top: 0.5rem;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: $border-radius;
+    display: block;
+    line-height: 25px;
+    // -webkit-appearance: none;
+    border: 1px solid $white-muted-color;
+    background: $white-color;
+    transition: border 0.3s ease;
+    color: $black-color;
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+    &-invert {
+      border: 1px solid $primary-color;
+    }
+    &-invert:focus {
+      outline: none;
+      border-color: $white-muted-color;
+    }
+    &-error {
+      color: $cancel-color;
+      font-size: 0.8rem;
+    }
+    &-error-input {
+      border: 0.5px solid $cancel-color;
+    }
+    &-error-input:focus {
+      border: 0.5px solid $cancel-color;
+    }
+  }
+}

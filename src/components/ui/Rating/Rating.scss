@@ -1,0 +1,17 @@
+@import "../_variables";
+
+.custom-rating {
+  display: flex;
+  gap: 0.5rem;
+  color: $gray-color;
+  &__icon {
+    cursor: pointer;
+  }
+  &__rated {
+    color: $primary-color;
+  }
+
+  &__rated-red {
+    color: $cancel-color;
+  }
+}

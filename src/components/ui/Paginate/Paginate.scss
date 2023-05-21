@@ -1,0 +1,32 @@
+@import "../_variables";
+
+.custom-paginate {
+  margin-top: 1rem;
+  width: 100%;
+  div {
+    display: flex;
+    float: right;
+  }
+
+  .custom-paginate-blocK {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: $white-color !important;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: smaller;
+    font-weight: 400;
+    color: $black-color;
+    border: 0.5px solid $white-muted-color;
+    cursor: pointer;
+  }
+  .custom-paginate__current-block {
+    border: 0.5px solid $primary-color;
+  }
+  .custom-paginate__disabled-block {
+    color: $gray-color;
+  }
+}

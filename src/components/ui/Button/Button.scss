@@ -1,0 +1,55 @@
+@import "../_variables";
+@import "../Main.scss";
+
+.custom-button {
+  .button {
+    width: $button-width;
+    height: $button-height;
+    border: 1px solid $primary-color;
+    outline: none;
+    background-color: $primary-color;
+    color: $white-color;
+    cursor: pointer;
+    border-radius: $border-radius;
+    font-weight: 500;
+    &:hover {
+      background-color: $white-color;
+      border: 1px solid $primary-color;
+      color: $primary-muted-color;
+      transition: 0.5s;
+    }
+  }
+
+  .button-invert {
+    background-color: $white-color !important;
+    border: 1px solid $primary-color !important;
+    color: $primary-color !important;
+    font-weight: 500;
+    width: $button-width;
+    height: $button-height;
+    outline: none;
+  }
+  .button-invert:hover {
+    background-color: $primary-color !important;
+    color: $white-color !important;
+    transition: 0.5s;
+    border: 1px solid $primary-color !important;
+  }
+  .loading-icon {
+    margin-left: 0.5rem;
+  }
+  .button-disabled {
+    background-color: $gray-color;
+    border: none;
+  }
+  .button-disabled:hover {
+    background-color: $gray-color;
+    border: none;
+    color: $white-color;
+  }
+  .button-icon {
+    width: 28px;
+    margin-left: -6px;
+    margin-right: -4px;
+  }
+}

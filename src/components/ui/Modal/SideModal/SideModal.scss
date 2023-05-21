@@ -1,0 +1,32 @@
+@import "../../_variables";
+
+.side-modal {
+  width: 30rem !important;
+  padding: 2rem;
+  overflow: scroll;
+  &__heading {
+    h3 {
+      color: $gray-color;
+    }
+    p {
+      color: $white-muted-color;
+      font-weight: 500;
+    }
+  }
+
+  &__alert {
+    min-height: 4rem;
+    border: 0.5px solid $primary-color;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    color: $gray-color;
+  }
+
+  &__alert-error {
+    border-color: $cancel-color;
+    color: $cancel-color;
+  }
+}

@@ -1,0 +1,65 @@
+@import "../../_variables";
+
+.ripple-loader {
+  $bg: rgba($white-muted-color, 0.2);
+
+  min-height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg;
+
+  p {
+    color: $gray-color;
+  }
+  
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .circle {
+      width: 15px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: $primary-color;
+      animation: move 500ms linear 0ms infinite;
+      margin-right: 30px;
+
+      &:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: grow 500ms linear 0ms infinite;
+      }
+
+      &:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+        animation: grow 500ms linear 0s infinite reverse;
+      }
+    }
+  }
+
+  @keyframes grow {
+    from {
+      transform: scale(0, 0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes move {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(45px);
+    }
+  }
+}

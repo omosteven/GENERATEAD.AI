@@ -1,0 +1,14 @@
+@import "../_variables";
+
+.page-heading {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  h2 {
+    color: $black-color;
+  }
+  p {
+    color: $white-muted-color;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}

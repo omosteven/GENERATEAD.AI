@@ -1,0 +1,15 @@
+@import "../_variables";
+
+.empty-view {
+  text-align: center;
+  &__icon {
+    font-size: 5rem;
+    margin-top: 2rem;
+    color: $primary-muted-color;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $gray-color;
+    line-height: 2rem;
+  }
+}

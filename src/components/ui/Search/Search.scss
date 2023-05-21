@@ -1,0 +1,49 @@
+@import "../_variables";
+
+.search-input {
+  width: fit-content;
+  display: flex;
+  border: 0.5px solid $white-muted-color;
+  align-items: center;
+  border-radius: $border-radius;
+  .icon {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    color: $white-muted-color;
+    font-size: 0.9rem;
+  }
+
+  input[type="search"] {
+    border: none;
+    height: 3rem;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+  }
+
+  input[type="search"]::placeholder {
+    color: $white-muted-color;
+  }
+
+  input[type="search"]:focus {
+    outline: none;
+    border-color: $white-muted-color;
+  }
+
+  .input-shift {
+    margin-left: 0.5rem;
+  }
+}
+
+.search-input:hover {
+  border-color: $primary-color;
+  transition: 0.5s;
+}
+
+.search-input-invert {
+  border-color: $primary-color;
+}
+.search-input-invert:hover {
+  border: 1px solid $white-muted-color !important;
+  transition: 0.5s;
+}

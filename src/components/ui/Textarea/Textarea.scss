@@ -1,0 +1,56 @@
+@import "../_variables";
+
+.textarea-input {
+  .label {
+    color: $black-color;
+    display: block;
+  }
+  .textarea {
+    outline: none;
+    height: $input-height;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: $white-color;
+    color: $black-color;
+    resize: none;
+    width: $textarea-width;
+    height: $textarea-height;
+    border-radius: $border-radius;
+
+    display: block;
+    line-height: 25px;
+    -webkit-appearance: none;
+    border: 1px solid $white-muted-color;
+    background: $white-color;
+    transition: border 0.3s ease;
+    &::placeholder {
+      color: $white-muted-color;
+    }
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+
+    &::placeholder {
+      color: $gray-muted-color;
+    }
+    &-invert {
+      border: 1px solid $primary-color;
+    }
+    &-invert:focus {
+      outline: none;
+      border-color: $white-muted-color;
+    }
+    &-error {
+      color: $cancel-color;
+      font-size: 0.8rem;
+    }
+    &-error-input {
+      border: 0.5px solid $cancel-color;
+    }
+    &-error-input:focus {
+      border: 0.5px solid $cancel-color;
+    }
+  }
+}

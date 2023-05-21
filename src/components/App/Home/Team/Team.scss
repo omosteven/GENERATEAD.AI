@@ -1,0 +1,59 @@
+@import "components/ui/_variables";
+
+.team {
+  background-color: $black-color;
+  width: 100%;
+  height: 100%;
+  //   margin-top: -10rem;
+  z-index: 1000000;
+  // background-image: url('../../../../assets/images/hero.svg');
+  // background-size: 100% 100%;
+  padding: 0px 5%;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (max-width: $large-screen) {
+    padding-top: 200px;
+  }
+
+  @media screen and (max-width: $medium-screen) {
+    padding: 60px 5%;
+  }
+
+  h1 {
+    color: $white-color;
+    // font-size: 80px;
+    line-height: 100px;
+    margin-top: 100px;
+    border-bottom: 1px dotted $gray-muted-color;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    @media screen and (max-width: $large-screen) {
+      //   font-size: 60px;
+      line-height: 80px;
+    }
+
+    @media screen and (max-width: $medium-screen) {
+      //   font-size: 36px;
+      line-height: 60px;
+      text-align: center;
+    }
+  }
+
+  &__members {
+    border-bottom: 10px solid $gray-muted-color;
+    // border-radius: 50%;
+    padding-bottom: 10rem;
+    border-radius: 5rem;
+    // padding-bottom: 2rem;
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
+    @media screen and (max-width: $medium-screen) {
+      border-radius: 5rem;
+      padding-bottom: 2rem;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "../_variables";
+
+.alert-component {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 100000;
+
+  .alert-bottom {
+    bottom: 20px !important;
+    top: unset !important;
+  }
+
+  .alert-left {
+    left: 28% !important;
+  }
+  .alert-right {
+    left: 77% !important;
+  }
+
+  .alert {
+    background: $white-color;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 5px;
+      background-color: $primary-color;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .close-alert {
+      font-weight: bold;
+      font-size: 1.5rem;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      cursor: pointer;
+      transform: rotate(45deg);
+      color: $cancel-color;
+    }
+
+    h1 {
+      font-size: x-large;
+      font-weight: bold;
+      color: $black-color;
+      margin: 0;
+      line-height: 2rem;
+    }
+
+    p {
+      font-size: small;
+      margin: 0;
+      line-height: 1.5rem;
+    }
+  }
+
+  .alert-danger-bg {
+    background-color: $cancel-color;
+    h1 {
+      color: $white-color;
+    }
+    p {
+      color: $white-color;
+    }
+    &::before {
+      content: "";
+      background-color: $white-color;
+    }
+
+    .close-alert {
+      color: $white-color;
+    }
+  }
+}

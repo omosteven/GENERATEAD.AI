@@ -1,0 +1,39 @@
+@import "../../_variables";
+
+.circular-loader {
+  $bg: rgba($white-muted-color, 0.2);
+  min-height: 15rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  background-color: $bg;
+  div {
+    margin-left: auto;
+    margin-right: auto;
+    p {
+      text-align: center;
+      color: $gray-color;
+      display: block;
+    }
+    .loader {
+      width: 48px;
+      height: 48px;
+      border: 4px solid $primary-color;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

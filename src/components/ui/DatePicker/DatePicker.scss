@@ -1,0 +1,62 @@
+@import "../_variables";
+
+.date-picker-input {
+  width: fit-content;
+  cursor: pointer !important;
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  div {
+    border: 1px solid $white-muted-color;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+
+    .icon {
+      margin-right: 0.5rem;
+      margin-left: -2rem;
+      color: $gray-color;
+    }
+
+    input[type="date"] {
+      border: none;
+      height: 3rem;
+      border-radius: 10px;
+      outline: none;
+      width: 100%;
+      padding: 1rem;
+      color: $gray-muted-color;
+    }
+
+    ::-webkit-datetime-edit-text {
+      opacity: 0;
+    }
+    ::-webkit-clear-button,
+    ::-webkit-inner-spin-button {
+      display: none;
+    }
+    ::-webkit-calendar-picker-indicator {
+      opacity: 0;
+      cursor: pointer;
+    }
+    input[type="date"]:hover::-webkit-calendar-picker-indicator {
+      opacity: 0.05;
+      color: $primary-color !important;
+      background-color: $primary-color;
+    }
+    input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
+      opacity: 0.15;
+    }
+  }
+  .div-invert {
+    border: 1px solid $primary-color;
+  }
+  .div-invert:hover {
+    border: 1px solid $white-muted-color;
+  }
+  div:hover {
+    border: 1px solid $primary-color;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../_variables";
+
+.error-view {
+  text-align: center;
+  &__icon {
+    font-size: 5rem;
+    margin-top: 2rem;
+    color: $cancel-color;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $gray-color;
+    line-height: 2rem;
+  }
+  &__retry {
+    color: $cancel-color !important;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

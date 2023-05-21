@@ -1,0 +1,35 @@
+@import "../_variables";
+
+.file-input {
+  width: fit-content;
+  cursor: pointer;
+  label {
+    padding: 0.8rem;
+    background: transparent;
+    display: table;
+    color: #fff;
+    color: $gray-color;
+    top: 0px;
+    background: #ffffff;
+    border: 1px solid $white-muted-color;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  label:hover {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    transition: 0.5s;
+  }
+  .label-invert {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+  .label-invert:hover {
+    border: 1px solid $white-muted-color;
+    color: $gray-color;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+}

@@ -1,0 +1,168 @@
+@import "components/ui/_variables";
+
+.how-it-works {
+  background-color: $black-color;
+  width: 100%;
+  height: 100%;
+  //   margin-top: -10rem;
+  z-index: 1000000;
+  // background-image: url('../../../../assets/images/hero.svg');
+  // background-size: 100% 100%;
+  padding: 0px 5%;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (max-width: $large-screen) {
+    padding-top: 200px;
+  }
+
+  @media screen and (max-width: $medium-screen) {
+    padding: 0px 5%;
+  }
+
+  h1 {
+    color: $white-color;
+    // font-size: 80px;
+    line-height: 100px;
+    margin-top: 100px;
+    border-bottom: 1px dotted $gray-muted-color;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    @media screen and (max-width: $large-screen) {
+      //   font-size: 60px;
+      line-height: 80px;
+    }
+
+    @media screen and (max-width: $medium-screen) {
+      //   font-size: 36px;
+      line-height: 60px;
+      text-align: center;
+    }
+  }
+  h3 {
+    color: $gray-muted-color;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 3rem;
+    @media screen and (max-width: $large-screen) {
+    }
+
+    @media screen and (max-width: $medium-screen) {
+      text-align: center;
+    }
+  }
+
+  &__container {
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid $gray-muted-color;
+    border-radius: $border-radius;
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: $medium-screen) {
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+    }
+    // padding-bottom: 2rem;
+    p {
+      color: $white-color;
+      //   font-weight: bold;
+      margin-bottom: 2rem;
+      width: 100%;
+      margin-top: 1rem;
+      font-size: 14px;
+      @media screen and (max-width: $medium-screen) {
+        margin-bottom: 0;
+      }
+    }
+
+    &--round {
+      width: 80%;
+      height: 80%;
+      border: 5px solid $primary-color;
+      border-radius: 100% !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      margin-top: -1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (max-width: $medium-screen) {
+        width: 15rem;
+        height: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        color: $white-color;
+        // font-size: 1.5rem;
+        // font-weight: bold;
+        border: 5px solid $white-color;
+        animation: rotate 5s linear infinite;
+      }
+    }
+
+    span {
+      font-size: 1rem;
+      color: $white-color;
+    }
+
+    span::before {
+      content: "1. Enter your desired text prompt";
+      animation: span-animate linear infinite 10s;
+    }
+
+    p::before {
+      content: "Tell us what you want your promotional content to be about.";
+      animation: p-animate infinite 5s;
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes span-animate {
+  0% {
+    content: "2. Watch our model create unique and engaging content";
+  }
+
+  50% {
+    content: "3. Personalize your content with actors of your choice";
+  }
+
+  75% {
+    content: "4. Download your highly personalized and engaging promotional media file";
+  }
+}
+
+@keyframes p-animate {
+  0% {
+    content: "Our AI-powered model will generate a captivating story based on your prompt. Each generated content is always unique, even for the same prompt";
+  }
+
+  50% {
+    content: "You have the option to upload the voice and video of your desired actors to feature in the content. Our platform seamlessly extracts and integrates these actors into the generated story";
+  }
+
+  100% {
+    content: "Once you're satisfied with the result, simply download your media file and use it to promote your brand or product.";
+  }
+}

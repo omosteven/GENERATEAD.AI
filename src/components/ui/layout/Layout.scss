@@ -1,0 +1,138 @@
+@import "components/ui/_variables";
+
+.layout {
+  background-color: $black-color;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  max-width: 100%;
+  transition: 0.3s opacity;
+  animation: fadeIn 5s;
+  background-color: $black-color;
+  height: 100%;
+}
+
+.layout-header {
+  height: 4rem;
+  width: 90%;
+  display: block;
+  margin-left: 5%;
+  margin-right: auto;
+  border-radius: 40px;
+  margin-top: 2rem;
+  position: fixed;
+  z-index: 100000;
+  background-color: $black-color;
+  // background-color: $primary-muted-color;
+  // border:0px;
+  border: 1px dashed $white-color;
+
+  span {
+    color: $white-color;
+  }
+
+  &__logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: -0.3rem;
+    &--first {
+      color: $primary-color !important;
+    }
+
+    &--second {
+      color: $gray-muted-color !important;
+    }
+
+    @media screen and (max-width: $medium-screen) {
+      font-size: 1.2rem;
+      margin-top: -0.2rem;
+    }
+  }
+
+  // padding: 3.5rem 2rem;
+  padding: 1.2rem 3.5rem;
+
+  @media screen and (max-width: $medium-screen) {
+    padding: 1.2rem;
+  }
+
+  &__links {
+    display: block;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    span {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    @media screen and (max-width: $medium-screen) {
+      display: none;
+    }
+  }
+
+  button {
+    margin-top: -0.75rem;
+    float: right;
+    @media screen and (max-width: $medium-screen) {
+      margin-top: -2rem;
+      display: none;
+    }
+  }
+
+  .header-menu-close {
+    display: flex;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .header-menu {
+    display: flex;
+    position: absolute;
+    margin-top: 0.75rem;
+    margin-left: 2rem;
+    border: 0.063rem solid $primary-color;
+    height: 3.5rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+.layout-footer {
+  height: 10rem;
+  width: 100%;
+  display: block;
+  z-index: 100000;
+  background-color: $black-color;
+  // background-color: $primary-muted-color;
+  // border:0px;
+  padding: 5%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align: center;
+    color: $white-color;
+    font-weight: bold;
+  }
+  span {
+    color: $white-color;
+  }
+}

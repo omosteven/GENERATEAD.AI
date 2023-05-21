@@ -1,0 +1,20 @@
+@import "../../_variables";
+
+.default-modal {
+  padding: 1.5rem;
+  .icon {
+    margin-left: auto;
+    display: block;
+    width: fit-content;
+    color: $cancel-color;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .close--button {
+    width: 100%;
+    background-color: $primary-color;
+    height: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+}
