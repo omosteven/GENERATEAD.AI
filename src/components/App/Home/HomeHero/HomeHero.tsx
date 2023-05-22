@@ -23,7 +23,7 @@ const HomeHero = () => {
             <h3>
               {/* An AI program that creates Adverts & Promotional Media content from
             a text prompt and Engineered for High Conversion. */}
-              Create Compelling Ads and Promotional Media Contents Effortlessly.
+              Create Compelling Ads and Promotional Media Contents Effortlessly from a Text-prompt
             </h3>
 
             <div className="home-hero__buttons">
@@ -60,7 +60,7 @@ const HomeHero = () => {
           </video>
           <p>
             Powerful tool for success: our product is an AI sandbox for
-            Marketing, and ad agencies and a Web-app for individuals, startups
+            Marketing/ad agencies and a Web-app for individuals, startups
             or small businesses.
           </p>
         </DefaultModal>

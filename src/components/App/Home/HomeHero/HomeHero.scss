@@ -26,7 +26,7 @@
 
   h1 {
     color: $white-color;
-    font-size: 50px;
+    font-size: 46px;
     line-height: 80px;
     margin-top: 100px;
 
@@ -36,14 +36,14 @@
     }
 
     @media screen and (max-width: $medium-screen) {
-      font-size: 30px;
+      font-size: 32px;
       line-height: 50px;
       text-align: center;
     }
   }
 
   h1::before {
-    content: "Unleash the Power of Artificial Intelligence";
+    content: "Unleash the Power of AI in Advertisement Generation";
     animation: hero-animate infinite 2s;
   }
   h3 {
@@ -185,7 +185,7 @@
 // @keyframes hero-animate {
 //   0% {
 //     opacity: 0;
-//     content: "Unleash the Power of Artificial Intelligence";
+//     content: "Unleash the Power of AI in Advertisement Generation";
 //   }
 
 //   100% {

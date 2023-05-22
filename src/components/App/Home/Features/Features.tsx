@@ -15,7 +15,7 @@ const featuresList = [
   },
   {
     title: "Customizable content",
-    text: "Upload your desired voice and video actors for each piece and tailor your ad content according to your needs, objectives, and budget.",
+    text: "Use our partnered influencers or upload your desired voice and video actors for each piece and tailor your ad content according to your needs, objectives, and budget.",
     image: image2,
     speed: 0,
   },

@@ -3,7 +3,7 @@ import "./Team.scss";
 import TeamMember from "./TeamMember/TeamMember";
 import josh from "assets/images/team/lin.jpeg";
 import alex from "assets/images/team/alex.jpeg";
-import tim from "assets/images/team/Tim.jpeg";
+// import tim from "assets/images/team/Tim.jpeg";
 
 const teamMembers = [
   {
@@ -12,12 +12,12 @@ const teamMembers = [
     scale: -10,
     image: josh,
   },
-  {
-    name: "Tim Cvetko",
-    position: "Founder | Technical Lead | AI Engineer & Researcher",
-    scale: 15,
-    image: tim,
-  },
+  // {
+  //   name: "Tim Cvetko",
+  //   position: "Founder | Technical Lead | AI Engineer & Researcher",
+  //   scale: 15,
+  //   image: tim,
+  // },
   {
     name: "Alex Starr",
     position: "Google, cornell Grad. | Advisor.",
