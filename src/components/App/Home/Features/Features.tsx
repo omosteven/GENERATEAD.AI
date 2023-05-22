@@ -30,7 +30,7 @@ const featuresList = [
 const Features = () => {
   return (
     <>
-      <section className="features">
+      <section className="features" id="features">
         <h1>WHY OUR AI</h1>
         <h3>
           Experience the Future of Advertising with Our powerful AI Technology

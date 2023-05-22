@@ -16,7 +16,7 @@
   padding: 150px 5%;
 
   @media screen and (max-width: $large-screen) {
-    padding-top: 180px;
+    padding-top: 120px;
   }
 
   @media screen and (max-width: $medium-screen) {
@@ -144,12 +144,16 @@
     padding: 1rem !important;
     background-color: $black-color !important;
     border-radius: $border-radius;
+    // border: 1px solid $gray-muted-color;
     button {
       background-color: $black-color;
     }
     video {
       width: 100%;
       height: 100%;
+    }
+    i {
+      color: $gray-muted-color !important;
     }
   }
 }
@@ -169,8 +173,11 @@
     position: absolute !important;
     background-color: $black-color !important;
     // border-radius: $border-radius;
-    border: 1px solid $gray-muted-color;
+    // border: 1px solid $gray-muted-color;
     border-radius: $border-radius;
+    i {
+      color: $gray-muted-color !important;
+    }
     input {
       background-color: $black-color;
       color: $white-color;

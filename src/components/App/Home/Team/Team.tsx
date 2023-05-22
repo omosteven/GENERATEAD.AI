@@ -1,9 +1,9 @@
 import { Col, Row } from "react-bootstrap";
 import "./Team.scss";
 import TeamMember from "./TeamMember/TeamMember";
-import josh from "assets/images/team/lin.jpeg";
+import josh from "assets/images/team/IMG_20221208_121616_590~2.jpg";
 import alex from "assets/images/team/alex.jpeg";
-// import tim from "assets/images/team/Tim.jpeg";
+import julian from "assets/images/team/Screenshot_20230522-202447.jpg";
 
 const teamMembers = [
   {
@@ -12,12 +12,12 @@ const teamMembers = [
     scale: -10,
     image: josh,
   },
-  // {
-  //   name: "Tim Cvetko",
-  //   position: "Founder | Technical Lead | AI Engineer & Researcher",
-  //   scale: 15,
-  //   image: tim,
-  // },
+  {
+    name: "Julian G. Dcruz",
+    position: "Founder | Technical Lead | AI Engineer & Researcher",
+    scale: 15,
+    image: julian,
+  },
   {
     name: "Alex Starr",
     position: "Google, cornell Grad. | Advisor.",
@@ -28,7 +28,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="team">
+    <section className="team" id="company">
       <h1>The Team</h1>
       <div className="team__members">
         <Row>

@@ -2,7 +2,7 @@ import "./HowItWorks.scss";
 
 const HowItWorks = () => {
   return (
-    <section className="how-it-works">
+    <section className="how-it-works" id="howItWorks">
       <h1>How It Works</h1>
       <h3>4 simple steps that explain how our platform works</h3>
 
