@@ -60,7 +60,7 @@ export const saveSurvey = async (
 
   const formDataSearchParams = new URLSearchParams();
   formDataSearchParams.set("Email", data?.email);
-  formDataSearchParams.set("Budget", data?.ProposedBudget);
+  formDataSearchParams.set("ProposedBudget", data?.ProposedBudget);
   formDataSearchParams.set("Industry", data?.Industry);
   formDataSearchParams.set("Date", currentDate);
   formDataSearchParams.set("form-name", "Survey");
