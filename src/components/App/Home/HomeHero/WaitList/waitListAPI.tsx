@@ -16,7 +16,7 @@ export const joinWaitList = async (
   formDataSearchParams.set("FullName", data.fullName);
   formDataSearchParams.set("Email", data?.email);
   formDataSearchParams.set("Date", currentDate);
-  formDataSearchParams.set("form-name", "WaitingList");
+  formDataSearchParams.set("form-name", "WaitList");
 
   await axios
     .post("/", formDataSearchParams.toString(), {

@@ -23,7 +23,11 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
     switch (stage) {
       case stages.JOIN_WAITLIST:
         return (
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            name="WaitList"
+            data-netlify="true"
+          >
             <Input
               placeholder="Enter Your Name"
               name="fullName"
@@ -47,7 +51,11 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
 
       case stages.SURVEY:
         return (
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            name="Survey"
+            data-netlify="true"
+          >
             <p>
               What's your proposed budget for this service on a monthly basis?
             </p>
