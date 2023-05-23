@@ -65,14 +65,14 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
             </p>
             <Input
               register={register}
-              name="proposedBudget"
+              name="ProposedBudget"
               required={true}
               placeholder="What's your proposed budget"
             />
             <Input
               placeholder="What industry do you operate in?"
               required={false}
-              name="industry"
+              name="Industry"
               register={register}
             />
             <Button className="close--button" text={"Submit"} />
@@ -87,7 +87,7 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
   const { register, handleSubmit, reset } = useForm<Inputs>();
 
   const registerWaitlist = async (data: any) => {
-    setEmail(data?.email);
+    setEmail(data?.Email);
     await joinWaitList(data, setLoading, () => {
       setStage(stages.SURVEY);
       reset();
