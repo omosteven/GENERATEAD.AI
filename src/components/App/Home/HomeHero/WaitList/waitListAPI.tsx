@@ -20,9 +20,7 @@ export const joinWaitList = async (
 
   await axios
     .post("/", formDataSearchParams.toString(), {
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
     })
     .then((suc) => {
       toast.success("Thank you for joining our waitlist!", {
@@ -69,9 +67,7 @@ export const saveSurvey = async (
 
   await axios
     .post("/", formDataSearchParams.toString(), {
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
     })
     .then((suc) => {
       toast.success("Thanks for filling the survey", {

@@ -27,7 +27,9 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
             onSubmit={handleSubmit(onSubmit)}
             name="WaitList"
             data-netlify="true"
+            method="POST"
           >
+            <input type="hidden" name="form-name" value="WaitList" />
             <Input
               placeholder="Enter Your Name"
               name="fullName"
@@ -55,7 +57,9 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
             onSubmit={handleSubmit(onSubmit)}
             name="Survey"
             data-netlify="true"
+            method="POST"
           >
+            <input type="hidden" name="form-name" value="Survey" />
             <p>
               What's your proposed budget for this service on a monthly basis?
             </p>
