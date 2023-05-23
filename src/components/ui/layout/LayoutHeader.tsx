@@ -18,10 +18,18 @@ const LayoutHeader = (props: { open: boolean; toggleSidebar: Function }) => {
       <header className="layout-header">
         <Row>
           <Col lg={3} sm={3} md={3} xs={3}>
-            <div className="layout-header__logo">
-              <span className="layout-header__logo--second">GENERATEAD</span>
-              <span className="layout-header__logo--first">.AI</span>
-            </div>
+            <Link
+              to="homeHero"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={100}
+            >
+              <div className="layout-header__logo">
+                <span className="layout-header__logo--second">GENERATEAD</span>
+                <span className="layout-header__logo--first">.AI</span>
+              </div>
+            </Link>
           </Col>
           <Col lg={6} sm={6} md={6} xs={6}>
             <div className="layout-header__links">

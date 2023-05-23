@@ -31,7 +31,7 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
           >
             <input type="hidden" name="form-name" value="WaitList" />
             <Input
-              placeholder="Enter Your Name"
+              placeholder="Enter Your Name/Brand"
               name="FullName"
               register={register}
               required
