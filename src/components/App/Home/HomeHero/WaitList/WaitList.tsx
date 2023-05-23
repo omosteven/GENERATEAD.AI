@@ -9,8 +9,8 @@ const stages = {
 };
 
 type Inputs = {
-  fullName: string;
-  email: string;
+  FullName: string;
+  Email: string;
 };
 
 const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
@@ -32,13 +32,13 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
             <input type="hidden" name="form-name" value="WaitList" />
             <Input
               placeholder="Enter Your Name"
-              name="fullName"
+              name="FullName"
               register={register}
               required
             />
             <Input
               placeholder="Enter Your Email"
-              name="email"
+              name="Email"
               register={register}
               required
             />

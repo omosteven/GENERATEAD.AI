@@ -13,8 +13,8 @@ export const joinWaitList = async (
 
   setLoading(true);
   const formDataSearchParams = new URLSearchParams();
-  formDataSearchParams.set("FullName", data.fullName);
-  formDataSearchParams.set("Email", data?.email);
+  formDataSearchParams.set("FullName", data.FullName);
+  formDataSearchParams.set("Email", data?.Email);
   formDataSearchParams.set("Date", currentDate);
   formDataSearchParams.set("form-name", "WaitList");
 
