@@ -43,6 +43,11 @@ main {
     cursor: pointer;
   }
 
+  .active:first-child {
+    text-decoration: none !important;
+    text-decoration-color: none !important;
+  }
+
   .active {
     text-decoration-color: $gray-muted-color;
   }
@@ -85,7 +90,7 @@ main {
     gap: 1rem;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: fit-content;
     span {
       margin-left: 8px;
       margin-right: 8px;
@@ -170,6 +175,11 @@ main {
     text-align: center;
     color: $white-color;
     font-weight: bold;
+  }
+  h6 {
+    font-size: 12px;
+    color: $gray-muted-color;
+    font-style: italic;
   }
   span {
     color: $white-color;

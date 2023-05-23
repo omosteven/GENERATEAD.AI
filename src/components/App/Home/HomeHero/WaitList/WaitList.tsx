@@ -1,6 +1,7 @@
 import { Button, DefaultModal, Input } from "components/ui";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { joinWaitList, saveSurvey } from "./waitListAPI";
 
 const stages = {
   JOIN_WAITLIST: "JOIN_WAITLIST",
@@ -15,6 +16,8 @@ type Inputs = {
 const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
   const { isOpen, onClose } = props;
   const [stage, setStage] = useState(stages.JOIN_WAITLIST);
+  const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState("");
 
   const renderBasedOnStage = () => {
     switch (stage) {
@@ -23,7 +26,7 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <Input
               placeholder="Enter Your Name"
-              name="fulName"
+              name="fullName"
               register={register}
               required
             />
@@ -33,19 +36,25 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
               register={register}
               required
             />
-            <Button className="close--button" text={"Submit"} />
+            <Button
+              className="close--button"
+              text={"Submit"}
+              isLoading={loading}
+              isLoadingText="Please wait..."
+            />
           </form>
         );
 
       case stages.SURVEY:
         return (
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <p>
               What's your proposed budget for this service on a monthly basis?
             </p>
             <Input
               register={register}
               name="proposedBudget"
+              required={true}
               placeholder="What's your proposed budget"
             />
             <Input
@@ -63,13 +72,24 @@ const WaitList = (props: { isOpen: boolean; onClose: Function }) => {
     }
   };
 
-  const { register, handleSubmit } = useForm<Inputs>();
+  const { register, handleSubmit, reset } = useForm<Inputs>();
 
-  const registerWaitlist = () => {
-    setStage(stages.SURVEY);
+  const registerWaitlist = async (data: any) => {
+    setEmail(data?.email);
+    await joinWaitList(data, setLoading, () => {
+      setStage(stages.SURVEY);
+      reset();
+    });
   };
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => registerWaitlist();
+  const recordSurvey = async (data: any) => {
+    await saveSurvey(data, setLoading, onClose);
+  };
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) =>
+    stage === stages.JOIN_WAITLIST
+      ? await registerWaitlist(data)
+      : await recordSurvey({ ...data, email });
 
   return (
     <DefaultModal

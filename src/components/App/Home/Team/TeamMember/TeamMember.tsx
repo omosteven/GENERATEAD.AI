@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import "./TeamMember.scss";
 
 const TeamMember = (props: {
   name: string;
-  position: String;
+  position: ReactNode;
   image: string;
 }) => {
   const { name, position, image } = props;

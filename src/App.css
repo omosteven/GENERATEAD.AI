@@ -3,3 +3,7 @@
 html body {
   font-family: "Montserrat", sans-serif;
 }
+
+.Toastify__toast-container--top-right {
+  z-index: 1000000 !important;
+}

@@ -59,7 +59,7 @@ const LayoutHeader = (props: { open: boolean; toggleSidebar: Function }) => {
                 offset={-100}
                 duration={100}
               >
-                <span>COMPANY</span>
+                <span>THE TEAM</span>
               </Link>
             </div>
           </Col>
@@ -106,7 +106,7 @@ const LayoutHeader = (props: { open: boolean; toggleSidebar: Function }) => {
               offset={-100}
               duration={100}
             >
-              <p>COMPANY</p>
+              <p>THE TEAM</p>
             </Link>
           </div>
         </div>
