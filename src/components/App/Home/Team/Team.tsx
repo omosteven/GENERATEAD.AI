@@ -1,9 +1,10 @@
 import { Col, Row } from "react-bootstrap";
 import "./Team.scss";
 import TeamMember from "./TeamMember/TeamMember";
-import josh from "assets/images/team/IMG_20230523_092103_211~2.jpg";
+import josh from "assets/images/team/josh.jpg";
 import alex from "assets/images/team/alex.jpeg";
-import julian from "assets/images/team/Screenshot_20230522-202447.jpg";
+import julian from "assets/images/team/julian.jpg";
+import ethan from "assets/images/team/ethan.jpeg";
 
 const teamMembers = [
   {
@@ -11,6 +12,12 @@ const teamMembers = [
     position: "Founder | Lead",
     scale: -10,
     image: josh,
+  },
+  {
+    name: "Ethan Werner",
+    position: "Founder | Co-Lead (Operations)",
+    scale: -10,
+    image: ethan,
   },
   {
     name: "Julian G. Dcruz",
@@ -36,8 +43,8 @@ const Team = () => {
       <h1>The Team</h1>
       <div className="team__members">
         <Row>
-          {teamMembers?.map(({ name, position, scale, image }, key) => (
-            <Col lg={4} key={key}>
+          {teamMembers?.map(({ name, position, image }, key) => (
+            <Col lg={3} md={6} key={key}>
               <TeamMember {...{ name, position, image }} />
             </Col>
           ))}
