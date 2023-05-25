@@ -3,7 +3,7 @@ const LayoutFooter = () => {
     <footer className="layout-footer">
       <div>
         <p>Copyright 2023</p>
-        <p>A product powered by ADSYNTHETICA</p>
+        <p>A product of ADSYNTHETICA LABS</p>
         <h6>
           This cutting-edge technology is developed in our Lab @ADSYNTHETICA,
           INC.
