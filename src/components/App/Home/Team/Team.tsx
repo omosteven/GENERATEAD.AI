@@ -3,7 +3,7 @@ import "./Team.scss";
 import TeamMember from "./TeamMember/TeamMember";
 import josh from "assets/images/team/josh.jpg";
 import alex from "assets/images/team/alex.jpeg";
-import julian from "assets/images/team/julian.jpg";
+import julian from "assets/images/team/julian.jpeg";
 import ethan from "assets/images/team/ethan.jpeg";
 
 const teamMembers = [
