@@ -9,13 +9,13 @@ import ethan from "assets/images/team/ethan.jpeg";
 const teamMembers = [
   {
     name: "Joshua D. Omole",
-    position: "Founder | Lead",
+    position: "Co-Founder",
     scale: -10,
     image: josh,
   },
   {
     name: "Ethan Werner",
-    position: "Founder | Co-Lead (Operations)",
+    position: "Co-Founder",
     scale: -10,
     image: ethan,
   },
@@ -23,7 +23,7 @@ const teamMembers = [
     name: "Julian G. Dcruz",
     position: (
       <>
-        Founder | Technical Lead <br /> Senior AI Engineer & Lead Researcher
+        Co-Founder | Technical Lead <br /> Senior AI Engineer & Lead Researcher
       </>
     ),
     scale: 15,
@@ -31,7 +31,7 @@ const teamMembers = [
   },
   {
     name: "Alex Starr",
-    position: "Google, cornell Grad. | Advisor.",
+    position: "Google | Advisor.",
     scale: -10,
     image: alex,
   },
