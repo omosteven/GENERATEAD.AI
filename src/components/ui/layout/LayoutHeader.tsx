@@ -26,8 +26,8 @@ const LayoutHeader = (props: { open: boolean; toggleSidebar: Function }) => {
               duration={100}
             >
               <div className="layout-header__logo">
-                <span className="layout-header__logo--second">GENERATEAD</span>
-                <span className="layout-header__logo--first">.AI</span>
+                <span className="layout-header__logo--first">AD</span>
+                <span className="layout-header__logo--second">SYNTHETICA</span>
               </div>
             </Link>
           </Col>

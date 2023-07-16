@@ -21,7 +21,7 @@ const featuresList = [
   },
   {
     title: "Optimization tools",
-    text: "Maximize your marketing ROI with GenerateAd.ai's powerful optimization tools.",
+    text: "Maximize your marketing ROI with Adsynthetica's powerful optimization tools.",
     image: image3,
     speed: 20,
   },
