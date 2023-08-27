@@ -1,0 +1,30 @@
+.bg-custom-radial-gradient {
+  background: 
+    radial-gradient(ellipse at top, #000000, transparent),
+    radial-gradient(ellipse at bottom, #000000, transparent),
+    radial-gradient(ellipse at left, rgba(82, 0, 255, 0.3), transparent),
+    radial-gradient(ellipse at right, rgba(82, 0, 255, 0.3), transparent);
+  background-color: #000000;
+}
+
+.bg-text-custom-gradient {
+  background: var(--linear, linear-gradient(90deg, #432371 0%, #FAAE7B 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Outfit;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.border-custom-gradient {
+  border: solid transparent;
+  border-width: 1px;
+  border-image: linear-gradient(to right, #432371, #FAAE7B) 1;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
