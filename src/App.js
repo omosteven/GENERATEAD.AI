@@ -1,5 +1,6 @@
 import './App.css';
 import Banner from './components/Banner';
+import DemoSignup from './components/DemoSignup';
 import PricingPlan from './components/PricingPlan';
 import ProductOverview from './components/ProductOverview';
 import ShowBlog from './components/blog/ShowBlog';
@@ -21,6 +22,7 @@ function App() {
       <ShowBlog/>
       <Banner/>
       <Footer/>
+
     </div>
   );
 }

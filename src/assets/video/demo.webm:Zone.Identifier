@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://storage.cloudconvert.com/tasks/29e0da9a-c7d3-41f5-b290-1da0566195e8/demo.webm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20230827%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20230827T181145Z&X-Amz-Expires=86400&X-Amz-Signature=b37fbc98dd232b39d26f80f65c507c1c20d7aaba37d1d5e862bed0ec4af17460&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22demo.webm%22&response-content-type=video%2Fwebm&x-id=GetObject

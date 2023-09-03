@@ -25,8 +25,8 @@ function ShowBlog() {
 
   const fetchBlogs = async () => {
     const data = await fetch(
-        // 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@adsynthetica'
-        'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@internationalaffairs'
+        'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@adsynthetica'
+        // 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@internationalaffairs'
     );
     const blogs = await data.json();
     console.log('Blogs : ',blogs)

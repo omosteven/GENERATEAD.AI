@@ -4,8 +4,8 @@ import audibg from '../../assets/carousel/audio_image.png';
 import videobg from '../../assets/carousel/video_image.png';
 import adscript_image from '../../assets/carousel/adscript_image.png';
 import social_media_image from '../../assets/carousel/social_media_image.png';
-// import marketting_strategy from '../../assets/carousel/marketting_strategy.png';
-// import analytics_image from '../../assets/carousel/analytics.png';
+import marketting_strategy from '../../assets/carousel/marketting_strategy.png';
+import analytics_image from '../../assets/carousel/analytics.png';
 
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -69,7 +69,7 @@ const Carousel = () => {
                         <div className="Paragraph3 opacity-75 text-white text-sm font-bold leading-normal">Try  Now</div>
                     </div>
                 </div>
-                {/* <div className="Frame7788 w-[356.34px] p-[21.82px] bg-stone-950 rounded-lg border-custom-gradient flex-col justify-center items-start gap-[22.73px] inline-flex">
+                <div className="Frame7788 w-[356.34px] p-[21.82px] bg-stone-950 rounded-lg border-custom-gradient flex-col justify-center items-start gap-[22.73px] inline-flex">
                     <img className="Rectangle5031 w-[314.52px] h-[193.62px]" src={marketting_strategy} />
                     <div className="Content self-stretch h-[186.27px] flex-col justify-start items-start gap-[17.27px] flex">
                         <div className="Heading w-[312.71px] text-white text-[25.45px] font-bold leading-10">Automated Marketing Strategy</div>
@@ -88,7 +88,7 @@ const Carousel = () => {
                     <div className="Frame7786 px-[14.54px] py-[7.27px] bg-gradient-to-r from-indigo-900 to-orange-300 rounded justify-start items-start gap-[3.64px] inline-flex">
                         <div className="Paragraph3 opacity-75 text-white text-sm font-bold leading-normal">Try  Now</div>
                     </div>
-                </div> */}
+                </div>
                 {/* End of block */}
             </div>
         </div>
