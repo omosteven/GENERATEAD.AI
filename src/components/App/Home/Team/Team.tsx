@@ -4,7 +4,8 @@ import TeamMember from "./TeamMember/TeamMember";
 import josh from "assets/images/team/josh.jpg";
 import alex from "assets/images/team/alex.jpeg";
 import julian from "assets/images/team/julian.jpeg";
-import ethan from "assets/images/team/ethan.jpeg";
+// import ethan from "assets/images/team/ethan.jpeg";
+import kim from "assets/images/team/kim.jpg";
 
 const teamMembers = [
   {
@@ -14,10 +15,10 @@ const teamMembers = [
     image: josh,
   },
   {
-    name: "Ethan Werner",
+    name: "Kimberly Garcia",
     position: "Co-Founder",
     scale: -10,
-    image: ethan,
+    image: kim,
   },
   {
     name: "Julian G. Dcruz",
