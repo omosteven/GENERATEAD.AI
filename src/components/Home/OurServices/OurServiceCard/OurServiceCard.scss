@@ -1,0 +1,69 @@
+.our-service-card {
+  padding: 21.817px;
+  @media screen and (max-width: 769px) {
+    width: calc(100vw - 40px);
+    height: fit-content;
+    padding: 19.531px;
+  }
+
+  &__content {
+    @media screen and (max-width: 769px) {
+      height: fit-content;
+    }
+  }
+  h5 {
+    color: #fff;
+    font-family: Plus Jakarta Sans;
+    font-size: 25.453px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    @media screen and (max-width: 769px) {
+      color: #fff;
+      font-family: Plus Jakarta Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%; /* 32px */
+    }
+  }
+
+  p {
+    color: #fff;
+    font-family: General Sans;
+    font-size: 18.181px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    opacity: 0.75;
+    @media screen and (max-width: 769px) {
+      color: #fff;
+      font-family: General Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 25.6px */
+    }
+  }
+
+  button {
+    color: #fff;
+    font-family: General Sans;
+    font-size: 14.544px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    opacity: 0.75;
+    @media screen and (max-width: 769px) {
+      border-radius: 15px !important;
+    }
+  }
+  // @media screen and (max-width: 1280px) {
+  //     display: grid !important;
+  //     grid-template-columns: 1fr 1fr;
+  //   }
+
+  //   @media screen and (max-width: 769px) {
+  //     grid-template-columns: 1fr;
+  //   }
+}

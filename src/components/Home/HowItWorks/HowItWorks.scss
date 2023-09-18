@@ -1,0 +1,137 @@
+.how-it-works {
+  //   padding: 150px;
+  //   width: 100%;
+  width: fit-content;
+  display: grid;
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 769px) {
+    padding: 20px;
+    padding-top: 0px;
+  }
+  p {
+    color: #e0e0e0;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    @media screen and (max-width: 769px) {
+      color: #e0e0e0;
+      text-align: center;
+      font-family: Plus Jakarta Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 19px; /* 158.333% */
+    }
+  }
+  h3 {
+    color: #e0e0e0;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 14px;
+    margin-top: 0px;
+    @media screen and (max-width: 769px) {
+      color: #e0e0e0;
+      text-align: center;
+      font-family: Plus Jakarta Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px;
+    }
+  }
+
+  &__card-list {
+    @media screen and (max-width: 1280px) {
+      display: grid;
+    }
+    @media screen and (max-width: 769px) {
+      display: grid;
+      gap: 20px !important;
+    }
+  }
+
+  &__card {
+    padding: 37px 33px;
+    font-family: Plus Jakarta Sans;
+    display: flex !important;
+    align-items: center !important;
+
+    &__block {
+      @media screen and (max-width: 1280px) {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media screen and (max-width: 769px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media screen and (max-width: 1280px) {
+      width: 400px !important;
+    }
+
+    @media screen and (max-width: 769px) {
+      width: calc(100vw - 40px) !important;
+      padding: 32px 28px;
+      border-radius: 13px !important;
+      border: 1px solid #e4e4e7 !important;
+    }
+
+    &.middle-card {
+      display: flex !important;
+      align-items: center !important;
+      @media screen and (max-width: 1280px) {
+        width: 400px !important;
+        margin-left: auto;
+        margin-right: auto;
+        height: 187px;
+      }
+
+      @media screen and (max-width: 769px) {
+        width: calc(100vw - 40px) !important;
+        margin-left: unset;
+      }
+
+      div.middle-card__number {
+        @media screen and (min-width: 1280px) {
+          top: 138px !important;
+        }
+      }
+
+      h5 {
+        @media screen and (min-width: 1280px) {
+          top: 197px;
+        }
+      }
+    }
+
+    h5 {
+      color: #fff;
+      font-family: Plus Jakarta Sans;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      margin-right: 12px;
+      @media screen and (max-width: 769px) {
+        color: #fff;
+        font-family: Plus Jakarta Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+      }
+    }
+  }
+}

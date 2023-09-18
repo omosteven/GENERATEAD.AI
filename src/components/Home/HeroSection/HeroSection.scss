@@ -1,0 +1,71 @@
+.hero-section {
+  padding-top: 150px;
+  @media screen and (max-width: 769px) {
+    padding-top: 80px;
+  }
+  span {
+    text-align: center;
+    font-family: Outfit !important;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @media screen and (max-width: 1280px) {
+      font-size: 48px;
+    }
+    @media screen and (max-width: 769px) {
+      color: #e0e0e0;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-left: 0 !important;
+    }
+  }
+  p {
+    color: #b7b7b7;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 725px;
+    @media screen and (max-width: 1280px) {
+      font-size: 16px;
+      width: 90%;
+    }
+
+    @media screen and (max-width: 769px) {
+      color: #b7b7b7;
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      width: 100%;
+    }
+  }
+
+  &__buttons {
+    @media screen and (max-width: 769px) {
+      display: grid;
+      width: fit-content;
+      margin-left: auto !important;
+      margin-right: auto;
+      gap: 15px;
+    }
+    button {
+      @media screen and (max-width: 769px) {
+        color: #e0e0e0;
+        font-family: Inter;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}

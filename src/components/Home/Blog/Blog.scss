@@ -1,0 +1,76 @@
+.blog {
+  margin-top: 10rem !important;
+
+  @media screen and (max-width: 769px) {
+    padding: 20px !important;
+    margin: 0 !important;
+    margin-top: 5rem !important;
+  }
+
+  p {
+    color: #fff;
+    font-family: General Sans;
+    font-size: 18.181px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    opacity: 0.75;
+    @media screen and (max-width: 769px) {
+      color: #fff;
+      font-family: General Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 25.6px */
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font-family: Plus Jakarta Sans;
+    font-size: 25.453px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    @media screen and (max-width: 769px) {
+      color: #fff;
+      font-family: Plus Jakarta Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%; /* 32px */
+    }
+  }
+
+  h3 {
+    color: #e0e0e0;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 43.633px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 769px) {
+      color: #e0e0e0;
+      text-align: center;
+      font-family: Outfit;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  &__card {
+    @media screen and (max-width: 769px) {
+      width: 100%;
+    }
+  }
+  .flex {
+    @media screen and (max-width: 769px) {
+      display: grid !important;
+      gap: 24px;
+    }
+  }
+}

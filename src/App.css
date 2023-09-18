@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
 .bg-custom-radial-gradient {
-  background: 
-    radial-gradient(ellipse at top, #000000, transparent),
+  background: radial-gradient(ellipse at top, #000000, transparent),
     radial-gradient(ellipse at bottom, #000000, transparent),
     radial-gradient(ellipse at left, rgba(82, 0, 255, 0.3), transparent),
     radial-gradient(ellipse at right, rgba(82, 0, 255, 0.3), transparent);
@@ -8,7 +11,7 @@
 }
 
 .bg-text-custom-gradient {
-  background: var(--linear, linear-gradient(90deg, #432371 0%, #FAAE7B 100%));
+  background: var(--linear, linear-gradient(90deg, #432371 0%, #faae7b 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -22,9 +25,24 @@
 .border-custom-gradient {
   border: solid transparent;
   border-width: 1px;
-  border-image: linear-gradient(to right, #432371, #FAAE7B) 1;
+  border-image: linear-gradient(to right, #432371, #faae7b) 1;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  /* font-family: 'Kumbh Sans', sans-serif; */
+}
+
+.desktop-only {
+  display: none !important;
+}
+
+@media screen and (min-width: 1280px) {
+  .desktop-only {
+    display: initial !important;
+  }
 }

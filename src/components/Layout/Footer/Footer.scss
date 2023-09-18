@@ -1,0 +1,131 @@
+.footer {
+  padding: 98px;
+  // padding-bottom: 0;
+  //   padding-top: 0;
+
+  &__logo-text {
+    color: #fff;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Donegal One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (max-width: 769px) {
+    display: block !important;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 769px) {
+      display: block !important;
+    }
+    p {
+      color: #fff;
+      font-family: Kumbh Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 20.8px */
+      letter-spacing: 0.32px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    @media screen and (max-width: 769px) {
+      display: grid;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #fff;
+      font-family: Kumbh Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 15.6px */
+      letter-spacing: 0.24px;
+    }
+    span {
+      color: #fff;
+      font-family: Kumbh Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      letter-spacing: 0.24px;
+    }
+  }
+
+  &__nav {
+    &__links {
+      gap: 20px !important;
+      justify-content: right;
+      display: flex;
+      @media screen and (max-width: 769px) {
+        justify-content: left;
+        margin-top: 20px;
+        display: grid;
+        gap: 20px !important;
+      }
+      a {
+        color: var(--cold-grey-white, #fff);
+        font-family: Kumbh Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        @media screen and (max-width: 769px) {
+          text-transform: capitalize;
+          font-weight: 500;
+
+          color: #fff;
+          // font-family: Kumbh Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%; /* 20.8px */
+          letter-spacing: 0.32px;
+
+          color: #bebebe;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+    &__socials {
+      display: flex;
+      justify-content: right;
+      gap: 16px;
+      margin-top: 20px;
+      @media screen and (max-width: 769px) {
+        justify-content: left;
+      }
+      svg,
+      img {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 4px;
+      }
+    }
+  }
+}
