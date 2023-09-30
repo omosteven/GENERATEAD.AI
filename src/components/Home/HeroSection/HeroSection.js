@@ -23,7 +23,7 @@ const HeroSection = () => {
           </p>
           <div className="w-full justify-center items-center gap-[31.59px] inline-flex hero-section__buttons">
             <div className="Frame4 w-[200px] h-[52px] bg-gradient-to-r from-indigo-900 to-orange-300 rounded-[10px] border border-stone-500 justify-center items-center gap-[13.16px] flex hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
-              <a target="_blank" href="http://localhost:3000/signup" className="text-neutral-200 text-lg font-medium ">
+              <a target="_blank" href="https://app-adsy.roycelabs.xyz" className="text-neutral-200 text-lg font-medium ">
                 Try now for free
               </a>
             </div>
