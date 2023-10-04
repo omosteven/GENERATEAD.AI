@@ -3,6 +3,7 @@ import "./ProductOverview.scss";
 import ProductOverviewImage from "./ProductOverviewImage/ProductOverviewImage";
 import NoPromptImage from "./NoPromptImage/NoPromptImage";
 import ProductOverviewImage2 from "./ProductOverviewImage2/ProductOverviewImage2";
+import { Link } from "react-router-dom";
 
 const ProductOverview = () => {
   return (
@@ -28,9 +29,11 @@ const ProductOverview = () => {
               process again.
             </p>
           </div>
-          <button className="Frame4 w-max h-max p-3 bg-gradient-to-r from-indigo-900 to-orange-300 rounded-[15px] border border-stone-500 justify-center items-center gap-3 inline-flex hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
-            Try now for free
-          </button>
+          <Link to="/get-started/" target="__blank">
+            <button className="Frame4 w-max h-max p-3 bg-gradient-to-r from-indigo-900 to-orange-300 rounded-[15px] border border-stone-500 justify-center items-center gap-3 inline-flex hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+              Try now for free
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -45,8 +48,8 @@ const ProductOverview = () => {
             </h3>
             <p className="w-[537px] text-zinc-400 text-[17px] font-medium">
               Unlike traditional ADs that are time-intensive and expensive, our
-              AI Services are designed to be intuitive, easy-to-use, fast, and fully
-              automated.{" "}
+              AI Services are designed to be intuitive, easy-to-use, fast, and
+              fully automated.{" "}
             </p>
 
             <div className="top-[350px] absolute desktop-only">

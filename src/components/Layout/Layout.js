@@ -1,5 +1,7 @@
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Layout = (props) => {
   const { children } = props;
@@ -8,6 +10,7 @@ const Layout = (props) => {
       <Header />
       {children}
       <Footer />
+      <ToastContainer />
     </>
   );
 };

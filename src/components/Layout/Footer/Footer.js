@@ -37,7 +37,7 @@ function Footer() {
             <a href="#services">Services</a>
             <a href="#features">Features</a>
             <div className="FollowUs flex-col justify-start items-start gap-5 inline-flex">
-              <a href="#blog">Blog</a>
+              <a href="mailto:founders@adsynthetica.com">Contact</a>
             </div>
           </div>
           <div>

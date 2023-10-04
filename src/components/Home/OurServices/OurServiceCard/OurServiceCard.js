@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import "./OurServiceCard.scss";
 
-const OurServiceCard = ({ image, title, description }) => {
+const OurServiceCard = ({ image, title, description, hideTryNow }) => {
   return (
     <div className="border-custom-gradient flex-col justify-center items-start gap-[22.73px] inline-flex our-service-card">
       <img
@@ -16,9 +17,15 @@ const OurServiceCard = ({ image, title, description }) => {
           {description}
         </p>
       </div>
-      <button className="Frame7786 px-[14.54px] py-[7.27px] bg-gradient-to-r from-indigo-900 to-orange-300 rounded justify-start items-start gap-[3.64px] inline-flex">
-        Try Now
-      </button>
+      {!hideTryNow ? (
+        <Link to="/get-started" target="__blank">
+          <button className="Frame7786 px-[14.54px] py-[7.27px] bg-gradient-to-r from-indigo-900 to-orange-300 rounded justify-start items-start gap-[3.64px] inline-flex">
+            Try Now
+          </button>
+        </Link>
+      ) : (
+        <div className="px-[14.54px] py-[7.27px]">Coming soon</div>
+      )}
     </div>
   );
 };

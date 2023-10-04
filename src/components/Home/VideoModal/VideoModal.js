@@ -26,7 +26,7 @@ function VideoModal() {
     const contentStyles = 'bg-white rounded-lg p-8';
     const closeButtonStyles = 'absolute top-5 right-5 text-white cursor-pointer hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out';
     const [showModal, setShowModal] = useState(false);
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+    // const isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
     return (
     <>
       <div className="WatchADemo text-neutral-200 text-lg font-medium hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer" onClick={() => setShowModal(true)}>

@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import AdSynthetica from "../../../assets/icons/AdSynthetica/AdSynthetica";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [show, toggleShow] = useState(false);
+
   return (
     <nav className="border-gray-200 bg-transparent dark:bg-transparent dark:border-gray-700 header">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://www.adsynthetica.com/" className="flex items-center header__logo">
-          {/* Logo goes here */}
-         <AdSynthetica/>
+        <Link to="/" className="flex items-center header__logo">
+          <AdSynthetica />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Adsynthetica
           </span>
-        </a>
+        </Link>
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
@@ -27,6 +29,7 @@ const Header = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 17 14"
+            onClick={() => toggleShow(!show)}
           >
             <path
               stroke="currentColor"
@@ -37,7 +40,11 @@ const Header = () => {
             />
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+
+        <div
+          className={`${show ? "" : "hidden"} w-full md:block md:w-auto`}
+          id="navbar-solid-bg"
+        >
           <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-900 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
             <li>
               <a
@@ -72,12 +79,13 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                to="/get-started"
+                target="__blank"
                 className="block py-2 pl-3 pr-4 text-white rounded hover:bg-blue-300 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Contact
-              </a>
+                Join Waitlist!
+              </Link>
             </li>
           </ul>
         </div>

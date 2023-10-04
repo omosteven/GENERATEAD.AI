@@ -45,6 +45,7 @@ const carouselContent = [
     image: analytics_image,
     title: "AI-powered Analytics/Optimization",
     description: "For your data-driven marketing success.",
+    hideTryNow: true,
   },
 ];
 
