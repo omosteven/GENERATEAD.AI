@@ -24,11 +24,10 @@ export const useWindowSize = () => {
 
 
 export const supabase = createClient(
-  // process.env.NEXT_PUBLIC_SUPABASE_URL,
-  // process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-  "https://msbwffwlrxjkyhcnfpbd.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1zYndmZndscnhqa3loY25mcGJkIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODkwODA5MTYsImV4cCI6MjAwNDY1NjkxNn0.5qobgdc0G_5B0CqOp5UAhBJmUsu8xsgGZjoYmaHmkqk"
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
+
 export const signInWithEmail = async (email, password) => {
   // const { data, error } =
   return await supabase.auth.signInWithPassword({
