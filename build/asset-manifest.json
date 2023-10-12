@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.f893c9eb.css",
-    "main.js": "./static/js/main.9f6898c1.js",
+    "main.css": "./static/css/main.87d3443f.css",
+    "main.js": "./static/js/main.8309721c.js",
     "static/js/787.19cdb65e.chunk.js": "./static/js/787.19cdb65e.chunk.js",
     "static/media/social_media_image.png": "./static/media/social_media_image.87ad6fef2484f22f25f9.png",
     "static/media/demo.webm": "./static/media/demo.01d4344a6b84dfa0b51f.webm",
@@ -11,18 +11,19 @@
     "static/media/add_script.png": "./static/media/add_script.1ae0bcb3b1834c5f290f.png",
     "static/media/privacy.pdf": "./static/media/privacy.17a99d572f29078db90c.pdf",
     "static/media/terms.pdf": "./static/media/terms.e319ae38d6fca7b3519e.pdf",
+    "static/media/img_4-removebg-preview.png": "./static/media/img_4-removebg-preview.187819347d3675a06f20.png",
     "static/media/audio_image.png": "./static/media/audio_image.8566739af4127acf9f86.png",
     "static/media/video_image.png": "./static/media/video_image.401f7099e9f924d5e6e0.png",
     "static/media/Adsynthetica icon 1-03.png": "./static/media/Adsynthetica icon 1-03.c66549447f143f7e04d6.png",
     "static/media/BannerBg.svg": "./static/media/BannerBg.4225a18676a273b613da.svg",
     "static/media/discord-v2-svgrepo-com.svg": "./static/media/discord-v2-svgrepo-com.becb6da9c8e961876a5f19aaae3f07a3.svg",
     "index.html": "./index.html",
-    "main.f893c9eb.css.map": "./static/css/main.f893c9eb.css.map",
-    "main.9f6898c1.js.map": "./static/js/main.9f6898c1.js.map",
+    "main.87d3443f.css.map": "./static/css/main.87d3443f.css.map",
+    "main.8309721c.js.map": "./static/js/main.8309721c.js.map",
     "787.19cdb65e.chunk.js.map": "./static/js/787.19cdb65e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f893c9eb.css",
-    "static/js/main.9f6898c1.js"
+    "static/css/main.87d3443f.css",
+    "static/js/main.8309721c.js"
   ]
 }
