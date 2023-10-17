@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import VideoModal from "../VideoModal/VideoModal";
 import "./HeroSection.scss";
 import { Link } from "react-router-dom";
 
 // top-[270px]
 const HeroSection = () => {
+  const [animationStage, setAnimationStage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimationStage((prev) => (prev > 1 ? 0 : prev + 1));
+    }, 2000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <div id="home" className="hero-section h-[720px] relative bg-transparent">
       <div className="max-w-screen-xl w-full mx-auto p-5 relative">
@@ -13,16 +24,39 @@ const HeroSection = () => {
             <span class="text-neutral-200 text-4xl font-semibold">
               Automate
             </span>
-            <span class="bg-text-custom-gradient">Your High visual</span>
-            <span class="text-neutral-200 text-4xl font-semibold">
-              , Video, and Audio Ad creation process at the speed of thought.
+            {/* bg-text-custom-gradient  */}
+            <span
+              className={`${
+                animationStage === 0 ? "hero-section__animation-1" : ""
+              }`}
+            >
+              {" "}
+              Your High visual
+            </span>
+            <span className="text-neutral-200 text-4xl font-semibold">
+              ,{" "}
+              <span
+                className={`${
+                  animationStage === 1 ? "hero-section__animation-2" : ""
+                }`}
+              >
+                Video, and Audio
+              </span>{" "}
+              Ad creation process at the{" "}
+              <span
+                className={`${
+                  animationStage === 2 ? "hero-section__animation-3" : ""
+                }`}
+              >
+                speed of thought.
+              </span>
             </span>
           </div>
           <p>
             A new way to think and create cross-channel Advertising content and
             marketing strategy with AI.
           </p>
-          <div className="w-full justify-center items-center gap-[31.59px] inline-flex hero-section__buttons">
+          <div className="w-full justify-center items-center gap-[31.59px] inline-flex hero-section__buttons hero-section__animation-btn">
             <div className="Frame4 w-[200px] h-[52px] bg-gradient-to-r from-indigo-900 to-orange-300 rounded-[10px] border border-stone-500 justify-center items-center gap-[13.16px] flex hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
               <Link
                 target="_blank"

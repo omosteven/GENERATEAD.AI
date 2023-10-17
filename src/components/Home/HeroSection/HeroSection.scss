@@ -68,4 +68,83 @@
       }
     }
   }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0.3;
+      color: white;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.3;
+      color: white;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__animation-btn {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+
+  &__animation-1 {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    background: var(--linear, linear-gradient(90deg, #432371 0%, #faae7b 100%));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+
+  &__animation-2 {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    background: var(
+      --Gradient-1,
+      linear-gradient(90deg, #2b59ff 0%, #bb2bff 100%)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+
+  &__animation-3 {
+    background: var(
+      --Gradient-1,
+      linear-gradient(90deg, #3a7343 0%, #a36f14 100%)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    // animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
 }
