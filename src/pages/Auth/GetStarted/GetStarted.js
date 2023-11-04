@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { signUpWithEmail } from "../../../helpers";
+import { parseError } from "../../../helpers";
 import { Link } from "react-router-dom";
 import "../Auth.scss";
 import image from "../../../assets/auth/img_4-removebg-preview.png";
@@ -7,44 +7,51 @@ import { useForm } from "react-hook-form";
 import Spinner from "../../../components/ui/Spinner/Spinner";
 
 import AuthError from "../common/AuthError/AuthError";
+import axios from "axios";
+import toastMessage from "../../../utils/toast";
 
 const GetStarted = () => {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const { register, handleSubmit, watch } = useForm();
+  const { register, handleSubmit } = useForm();
 
-  console.log(watch("email"));
   const [success, setSuccess] = useState(false);
 
-  const signUp = async (payload) => {
-    setErrorMessage("");
-    setSuccess(false);
-    const { password, cpassword, email } = payload;
+  const signUpUser = async (data) => {
+    const url = "http://localhost:8000/api/v1/register";
 
-    if (password !== cpassword) {
-      setErrorMessage("Password mismatch!");
-      return;
-    }
+    try {
+      setLoading(true);
+      setErrorMessage("");
+      setSuccess("");
 
-    setLoading(true);
-    // return;
-    const { data, error } = await signUpWithEmail(email, password);
+      await axios({
+        method: "POST",
+        url,
+        data,
+        timeout: 120000,
+      });
 
-    if (error) {
-      setErrorMessage(error.message);
+      setSuccess(true);
+      setErrorMessage("");
+    } catch (error) {
+      const { errorMessage: errorMssg } = parseError(error);
+      setErrorMessage(errorMssg);
       setLoading(false);
-      return;
+      setSuccess("");
+      toastMessage(errorMssg, true);
     }
-
-    console.log({ data });
-
-    setLoading(false);
-    setSuccess(true);
   };
 
   const onSubmit = (data) => {
-    signUp(data);
+    const { password, cpassword } = data;
+    if (password === cpassword) {
+      signUpUser(data);
+    } else {
+      setErrorMessage("Passwords do not match");
+      toastMessage("Passwords do not match", true);
+    }
   };
 
   return (
@@ -54,7 +61,7 @@ const GetStarted = () => {
           {/* {success} */}
           <form onSubmit={handleSubmit(onSubmit)} className="auth__form">
             <div className="flex flex-col">
-              <div className="py-10 flex flex-col">
+              <div className="py-4 flex flex-col">
                 <h3>Welcome 👋</h3>
                 <p>
                   Join our community of brands & advertisers, and embark on a
@@ -88,6 +95,28 @@ const GetStarted = () => {
                       placeholder="@ Email Address"
                       {...register?.("email", { required: true })}
                       name="email"
+                      class="bg-gray-800 border border-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5  "
+                      required
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label for="default-input">First Name</label>
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      {...register?.("firstName", { required: true })}
+                      name="firstName"
+                      class="bg-gray-800 border border-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5  "
+                      required
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label for="default-input">Last Name</label>
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      {...register?.("lastName", { required: true })}
+                      name="lastName"
                       class="bg-gray-800 border border-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5  "
                       required
                     />

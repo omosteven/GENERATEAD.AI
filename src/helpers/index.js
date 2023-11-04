@@ -22,7 +22,6 @@ export const useWindowSize = () => {
   return windowSize;
 };
 
-
 export const supabase = createClient(
   // process.env.NEXT_PUBLIC_SUPABASE_URL,
   // process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
@@ -46,4 +45,45 @@ export const signUpWithEmail = async (email, password) => {
 
 export const signOut = async () => {
   return await supabase.auth.signOut();
+};
+
+/**
+ *
+ * @param { import("axios").AxiosError } errorObject
+ */
+
+const returnValue = (errorMessage) => {
+  return { isError: true, errorMessage };
+};
+
+export const parseError = (errorObject) => {
+  const { request, response, message } = errorObject;
+
+  if (response) {
+    if (response?.data) {
+      const {
+        data: { message },
+      } = response;
+
+      return returnValue(message);
+    }
+
+    return returnValue(response.statusText);
+  } else if (request) {
+    const statusCodeForNoInternet = 0;
+
+    const { status, statusText: errorMessage } = request;
+
+    if (status === statusCodeForNoInternet) {
+      return returnValue(
+        "Seems you are not connected to the internet, refresh your browser"
+      );
+    }
+
+    return returnValue(errorMessage);
+  } else {
+    return returnValue(message);
+  }
+
+  // return "Error Occured";
 };
