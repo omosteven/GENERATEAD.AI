@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.588bd5d7.css",
-    "main.js": "./static/js/main.391ae125.js",
+    "main.css": "./static/css/main.1ff23e72.css",
+    "main.js": "./static/js/main.6fe34e23.js",
     "static/js/787.19cdb65e.chunk.js": "./static/js/787.19cdb65e.chunk.js",
     "static/media/social_media_image.png": "./static/media/social_media_image.87ad6fef2484f22f25f9.png",
     "static/media/demo.webm": "./static/media/demo.01d4344a6b84dfa0b51f.webm",
@@ -18,12 +18,12 @@
     "static/media/BannerBg.svg": "./static/media/BannerBg.4225a18676a273b613da.svg",
     "static/media/discord-v2-svgrepo-com.svg": "./static/media/discord-v2-svgrepo-com.becb6da9c8e961876a5f19aaae3f07a3.svg",
     "index.html": "./index.html",
-    "main.588bd5d7.css.map": "./static/css/main.588bd5d7.css.map",
-    "main.391ae125.js.map": "./static/js/main.391ae125.js.map",
+    "main.1ff23e72.css.map": "./static/css/main.1ff23e72.css.map",
+    "main.6fe34e23.js.map": "./static/js/main.6fe34e23.js.map",
     "787.19cdb65e.chunk.js.map": "./static/js/787.19cdb65e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.588bd5d7.css",
-    "static/js/main.391ae125.js"
+    "static/css/main.1ff23e72.css",
+    "static/js/main.6fe34e23.js"
   ]
 }
