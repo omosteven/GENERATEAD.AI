@@ -42,10 +42,20 @@ function Footer() {
           </div>
           <div>
             <div className="footer__nav__socials">
-              <a href="https://lnkd.in/gvTHdRXQ" target="__blank">
+              <a
+                href="https://lnkd.in/gvTHdRXQ"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <LinkedIn />
               </a>
-              <Discord />
+              <a
+                href="https://discord.gg/XJ3MMqcN"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Discord />
+              </a>
             </div>
           </div>
         </div>

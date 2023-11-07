@@ -59,7 +59,6 @@ const HeroSection = () => {
           <div className="w-full justify-center items-center gap-[31.59px] inline-flex hero-section__buttons hero-section__animation-btn">
             <div className="Frame4 w-[200px] h-[52px] bg-gradient-to-r from-indigo-900 to-orange-300 rounded-[10px] border border-stone-500 justify-center items-center gap-[13.16px] flex hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
               <Link
-                target="_blank"
                 rel="noreferrer"
                 to="/get-started"
                 className="text-neutral-200 text-lg font-medium "

@@ -18,7 +18,7 @@ const OurServiceCard = ({ image, title, description, hideTryNow }) => {
         </p>
       </div>
       {!hideTryNow ? (
-        <Link to="/get-started" target="__blank">
+        <Link to="/get-started">
           <button className="Frame7786 px-[14.54px] py-[7.27px] bg-gradient-to-r from-indigo-900 to-orange-300 rounded justify-start items-start gap-[3.64px] inline-flex">
             Try Now
           </button>

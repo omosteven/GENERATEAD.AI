@@ -19,7 +19,7 @@ const GetStarted = () => {
   const [success, setSuccess] = useState(false);
 
   const signUpUser = async (data) => {
-    const url = "http://localhost:8000/api/v1/register";
+    const url = "http://3.132.215.79/api/v1/register";
 
     try {
       setLoading(true);
@@ -84,21 +84,19 @@ const GetStarted = () => {
                   <br />
                   We are still in the development phase but to stay updated with
                   our progress, insights, and connect with fellow enthusiats,
-                  please join our thriving online community on Discord.
+                  please follow us on{" "}
+                  <a
+                    href="https://lnkd.in/gvTHdRXQ"
+                    className="linkedin-url"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>{" "}
+                  or join our thriving online community on Discord.
                 </div>
               ) : (
                 <div>
-                  <div class="mb-6">
-                    <label for="default-input">Email Address</label>
-                    <input
-                      type="email"
-                      placeholder="@ Email Address"
-                      {...register?.("email", { required: true })}
-                      name="email"
-                      class="bg-gray-800 border border-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5  "
-                      required
-                    />
-                  </div>
                   <div class="mb-6">
                     <label for="default-input">First Name</label>
                     <input
@@ -122,13 +120,24 @@ const GetStarted = () => {
                     />
                   </div>
                   <div class="mb-6">
+                    <label for="default-input">Email Address</label>
+                    <input
+                      type="email"
+                      placeholder="@ Email Address"
+                      {...register?.("email", { required: true })}
+                      name="email"
+                      class="bg-gray-800 border border-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5  "
+                      required
+                    />
+                  </div>
+                  <div class="mb-6">
                     <label for="default-input">Password</label>
                     <input
                       type="password"
                       {...register?.("password", { required: true })}
-                      placeholder="Password (min. 8 Characters"
+                      placeholder="Password (min. 6 Characters)"
                       name="password"
-                      minLength={8}
+                      minLength={6}
                       class="bg-gray-800 border border-gray-900 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5  "
                       required
                     />
@@ -139,8 +148,8 @@ const GetStarted = () => {
                       type="password"
                       {...register?.("cpassword", { required: true })}
                       name="cpassword"
-                      minLength={8}
-                      placeholder="Password (min. 8 Characters"
+                      minLength={6}
+                      placeholder="Password (min. 6 Characters)"
                       class="bg-gray-800 border border-gray-900 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5  "
                       required
                     />

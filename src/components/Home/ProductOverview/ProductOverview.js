@@ -29,7 +29,7 @@ const ProductOverview = () => {
               process again.
             </p>
           </div>
-          <Link to="/get-started/" target="__blank">
+          <Link to="/get-started">
             <button className="Frame4 w-max h-max p-3 bg-gradient-to-r from-indigo-900 to-orange-300 rounded-[15px] border border-stone-500 justify-center items-center gap-3 inline-flex hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
               Try now for free
             </button>
