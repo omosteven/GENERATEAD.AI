@@ -19,7 +19,7 @@ const GetStarted = () => {
   const [success, setSuccess] = useState(false);
 
   const signUpUser = async (data) => {
-    const url = "http://ec2-3-132-215-79.us-east-2.compute.amazonaws.com/api/v1/register";
+    const url = "https://generatead-backend.vercel.app/api/v1/register";
 
     try {
       setLoading(true);
