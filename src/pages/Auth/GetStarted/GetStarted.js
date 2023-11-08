@@ -83,7 +83,7 @@ const GetStarted = () => {
                   <br />
                   <br />
                   We are still in the development phase but to stay updated with
-                  our progress, insights, and connect with fellow enthusiats,
+                  our progress, insights, and connect with fellow enthusiasts,
                   please follow us on{" "}
                   <a
                     href="https://lnkd.in/gvTHdRXQ"
