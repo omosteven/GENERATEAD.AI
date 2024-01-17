@@ -74,6 +74,7 @@ const OurServices = () => {
 
   const isTablet = screenWidth.current <= 768;
 
+  // carousel-inner left-[51.54px] right-[51.54px] top-[169px] absolute justify-center items-center gap-[22px] inline-flex transition-all ease-in-out duration-300
   return (
     <div
       id="services"
@@ -82,9 +83,10 @@ const OurServices = () => {
       <h3>Our Services</h3>
       <div
         className={
-          isTablet
-            ? "our-services__mobile-list"
-            : "carousel-inner left-[51.54px] right-[51.54px] top-[169px] absolute justify-center items-center gap-[22px] inline-flex transition-all ease-in-out duration-300"
+          // isTablet
+          //   ? "our-services__mobile-list"
+          //   : "our-services__desktop-list"
+          "our-services__desktop-list"
         }
         style={
           !isTablet
