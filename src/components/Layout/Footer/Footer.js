@@ -4,7 +4,7 @@ import PrivacyDoc from "../../../assets/docs/privacy.pdf";
 import "./Footer.scss";
 import FooterLogo from "./FooterLogo/FooterLogo";
 import LinkedIn from "../../../assets/icons/LinkedIn/LinkedIn";
-import Discord from "../../../assets/icons/Discord/Discord";
+// import Discord from "../../../assets/icons/Discord/Discord";
 
 function Footer() {
   return (
@@ -49,13 +49,13 @@ function Footer() {
               >
                 <LinkedIn />
               </a>
-              <a
+              {/* <a
                 href="https://discord.gg/XJ3MMqcN"
                 rel="noreferrer"
                 target="_blank"
               >
                 <Discord />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

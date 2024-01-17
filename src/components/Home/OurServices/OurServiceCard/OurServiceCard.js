@@ -5,14 +5,13 @@ const OurServiceCard = ({ image, title, description, hideTryNow }) => {
   return (
     <div className="border-custom-gradient flex-col justify-center items-start gap-[22.73px] inline-flex our-service-card">
       <img
-        className="Rectangle5031 w-[314.52px] h-[193.62px]"
+        className="Rectangle5031 h-[193.62px]"
+        //  w-[314.52px]
         src={image}
         alt={title}
       />
-      <div className="self-stretch h-[186.27px] flex-col justify-start items-start gap-[17.27px] flex our-service-card__content">
-        <h5 className="w-[316.34px] text-white text-[25.45px] font-bold">
-          {title}
-        </h5>
+      <div className="self-stretch h-[150px] flex-col justify-start items-start gap-[17.27px] flex our-service-card__content">
+        <h5 className="text-white text-[25.45px] font-bold">{title}</h5>
         <p className="Paragraph2 self-stretch opacity-75 text-white text-lg font-medium">
           {description}
         </p>
@@ -24,7 +23,7 @@ const OurServiceCard = ({ image, title, description, hideTryNow }) => {
           </button>
         </Link>
       ) : (
-        <div className="px-[14.54px] py-[7.27px]">Coming soon</div>
+        <div className="py-[7.27px]">Coming soon</div>
       )}
     </div>
   );

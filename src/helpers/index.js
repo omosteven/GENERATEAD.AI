@@ -87,3 +87,14 @@ export const parseError = (errorObject) => {
 
   // return "Error Occured";
 };
+
+export const extractURLFromString = (inputString) => {
+  const urlRegex = /(https?:\/\/[^\s]+")/;
+
+  // Find matches in the input string
+  const matches = inputString.match(urlRegex);
+
+  // Return the first match (if any)
+  const length = matches[0]?.length;
+  return matches ? matches[0]?.slice?.(0, length - 1) : null;
+};

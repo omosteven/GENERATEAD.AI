@@ -1,14 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.1ff23e72.css",
-    "main.js": "./static/js/main.04bc124b.js",
+    "main.css": "./static/css/main.e050cf10.css",
+    "main.js": "./static/js/main.3fc18969.js",
     "static/js/787.19cdb65e.chunk.js": "./static/js/787.19cdb65e.chunk.js",
-    "static/media/social_media_image.png": "./static/media/social_media_image.87ad6fef2484f22f25f9.png",
     "static/media/demo.webm": "./static/media/demo.01d4344a6b84dfa0b51f.webm",
     "static/media/demo.mp4": "./static/media/demo.a4c666d3c0b84a1a2037.mp4",
     "static/media/analytics.png": "./static/media/analytics.dcfe71da218392d54e3e.png",
-    "static/media/marketting_strategy.png": "./static/media/marketting_strategy.1476b9b7b860317b0d8d.png",
-    "static/media/add_script.png": "./static/media/add_script.1ae0bcb3b1834c5f290f.png",
     "static/media/privacy.pdf": "./static/media/privacy.17a99d572f29078db90c.pdf",
     "static/media/terms.pdf": "./static/media/terms.e319ae38d6fca7b3519e.pdf",
     "static/media/img_4-removebg-preview.png": "./static/media/img_4-removebg-preview.187819347d3675a06f20.png",
@@ -17,13 +14,12 @@
     "static/media/Adsynthetica icon 1-03.png": "./static/media/Adsynthetica icon 1-03.c66549447f143f7e04d6.png",
     "index.html": "./index.html",
     "static/media/BannerBg.svg": "./static/media/BannerBg.4225a18676a273b613da.svg",
-    "static/media/discord-v2-svgrepo-com.svg": "./static/media/discord-v2-svgrepo-com.becb6da9c8e961876a5f19aaae3f07a3.svg",
-    "main.1ff23e72.css.map": "./static/css/main.1ff23e72.css.map",
-    "main.04bc124b.js.map": "./static/js/main.04bc124b.js.map",
+    "main.e050cf10.css.map": "./static/css/main.e050cf10.css.map",
+    "main.3fc18969.js.map": "./static/js/main.3fc18969.js.map",
     "787.19cdb65e.chunk.js.map": "./static/js/787.19cdb65e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ff23e72.css",
-    "static/js/main.04bc124b.js"
+    "static/css/main.e050cf10.css",
+    "static/js/main.3fc18969.js"
   ]
 }

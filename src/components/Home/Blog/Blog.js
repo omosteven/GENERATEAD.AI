@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Blog.scss";
+import { extractURLFromString } from "../../../helpers";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -32,6 +33,7 @@ const Blog = () => {
     setBlogs(blogs.items);
   };
 
+  console.log({ blogs });
   return (
     <div id="blog" className="p-5 m-8 blog">
       <h3>Our Latest Updates</h3>
@@ -43,7 +45,7 @@ const Blog = () => {
               className="bg-black rounded-lg shadow-md p-4 border-custom-gradient"
             >
               <img
-                src={blog.thumbnail}
+                src={extractURLFromString(blog?.content)}
                 alt={blog.title}
                 className="w-full rounded-lg mb-4"
               />
@@ -77,7 +79,7 @@ const Blog = () => {
               className="bg-black rounded-lg shadow-md p-4 mb-4 border-custom-gradient"
             >
               <img
-                src={blog.thumbnail}
+                src={extractURLFromString(blog?.content)}
                 alt={blog.title}
                 className="w-full rounded-lg mb-4"
               />

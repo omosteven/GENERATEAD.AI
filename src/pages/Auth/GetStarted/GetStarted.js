@@ -93,7 +93,7 @@ const GetStarted = () => {
                   >
                     LinkedIn
                   </a>{" "}
-                  or join our thriving online community on Discord.
+                  {/* or join our thriving online community on Discord. */}
                 </div>
               ) : (
                 <div>

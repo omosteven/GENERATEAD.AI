@@ -1,11 +1,16 @@
 .our-service-card {
   padding: 21.817px;
+  width: 100% !important;
   @media screen and (max-width: 769px) {
-    width: calc(100vw - 40px);
+    // width: calc(100vw - 40px);
+    width: 100%;
     height: fit-content;
     padding: 19.531px;
   }
 
+  img{
+    width: 100%;
+  }
   &__content {
     @media screen and (max-width: 769px) {
       height: fit-content;
@@ -14,7 +19,7 @@
   h5 {
     color: #fff;
     font-family: Plus Jakarta Sans;
-    font-size: 25.453px;
+    // font-size: 25.453px !important;
     font-style: normal;
     font-weight: 700;
     line-height: 160%;
