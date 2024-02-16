@@ -105,6 +105,19 @@ const Blog = () => {
           ))}
         </div>
       </div>
+      <p>
+        <b style={{ textTransform: "capitalize" }}>Another Update</b> :{" "}
+        <b>Adsynthetica</b> has already been accepted into the Acceleration
+        program of{" "}
+        <a
+          href="https://fastercapital.com/"
+          target="__blank"
+          style={{ color: "#faae7b" }}
+        >
+          FasterCapital
+        </a>{" "}
+        and is seeking a capital of $1.5M
+      </p>
     </div>
   );
 };
